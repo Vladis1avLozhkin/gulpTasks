@@ -1,6 +1,6 @@
 {
-  "name": "svg-sorax",
-  "version": "1.0.0",
+  "name": "gulp-tasks",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,14 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-csso": "^1.0.0",
     "gulp-less": "^3.0.3",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.6",
+    "less-plugin-clean-css": "^1.5.0",
     "require-dir": "^0.3.0"
   }
 }

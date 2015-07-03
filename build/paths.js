@@ -9,6 +9,7 @@ module.exports = {
 			source + 'less/**/*.less',
 			'!' + source + 'less/**/_*.less'
 		],
-		dest: dist + 'css',
+		watch: source + 'less/**/*.less',
+		dest: dist + 'css'
 	}
 };
