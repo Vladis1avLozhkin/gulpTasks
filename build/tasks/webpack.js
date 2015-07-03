@@ -1,7 +1,7 @@
 var gulp = require('../gulp.js')
 var notifier = require('node-notifier');
 var paths = require('../paths.js');;
-var webpack = require('gulp-webpack');
+var webpack = require('webpack-stream');
 var sourcemaps = require('gulp-sourcemaps');
 
 var config = {
@@ -15,6 +15,7 @@ var config = {
 		loaders: [
 			{
 				test: /\.js?$/,
+				exclude: /(node_modules|bower_components)/,
 				loader: 'babel-loader',
 			}
 		]
