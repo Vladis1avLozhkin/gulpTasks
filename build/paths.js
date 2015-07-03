@@ -7,9 +7,23 @@ module.exports = {
 	less: {
 		src: [
 			source + 'less/**/*.less',
-			'!' + source + 'less/**/_*.less'
+			'!' + source + 'less/**/_*.less' // игнорировать файлы начинающиеся с подчеркивания
 		],
+		dest: dist + 'css',
 		watch: source + 'less/**/*.less',
-		dest: dist + 'css'
+	},
+	js: {
+		src: [
+			source + 'js/**/*.js',
+		],
+		entries: {
+			main: source + 'js/' + 'main.js',
+		},
+		dest: dist + 'js',
+	},
+	others: {
+		notifier: {
+			icon: './node_modules/gulp-notify/assets/gulp-error.png'
+		}
 	}
 };
